@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.bacon \
     libshim_camera \
+    libshim_cameraclient \
     Snap
 
 # Charger
