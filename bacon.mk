@@ -71,17 +71,10 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libshim_camera \
-    libshim_cameraclient \
-    camera.device@1.0-impl-legacy \
-    android.hardware.camera.provider@2.4-impl-legacy \
-    camera.bacon \
-    Snap \
-    Camera2
-
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8974
+    camera.device@1.0-impl \
+    android.hardware.camera.provider@2.4-impl \
+    camera.msm8974 \
+    Snap-bacon
 
 # Charger
 PRODUCT_PACKAGES += \
