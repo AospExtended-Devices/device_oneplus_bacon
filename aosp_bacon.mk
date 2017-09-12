@@ -15,6 +15,9 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Get the long list of APNs
+PRODUCT_COPY_FILES += device/oneplus/bacon/apns-full-conf.xml:system/etc/apns-conf.xml
+
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
