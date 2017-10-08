@@ -21,6 +21,9 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 # Inherit some common AEX stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 
+#Bootanimation res
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := aosp_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
