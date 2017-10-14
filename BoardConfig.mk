@@ -85,11 +85,6 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 TARGET_PROVIDES_CAMERA_HAL := true
 TARGET_USES_NON_TREBLE_CAMERA := true
 
-# CM Hardware
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
-
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifeq ($(call match-word-in-list,$(TARGET_BUILD_VARIANT),user),true)
@@ -146,6 +141,10 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
+
+# Lineage Hardware
+BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/lineagehw
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # NFC
 BOARD_NFC_CHIPSET := pn547
