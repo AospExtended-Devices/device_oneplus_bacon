@@ -5,7 +5,8 @@ LOCAL_MODULE := camera.bacon
 LOCAL_SRC_FILES := CameraWrapper.cpp
 
 LOCAL_C_INCLUDES := \
-    system/media/camera/include
+    system/media/camera/include \
+    frameworks/native/libs/nativebase/include
 
 LOCAL_STATIC_LIBRARIES := libbase libarect
 LOCAL_SHARED_LIBRARIES := \
