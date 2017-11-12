@@ -238,6 +238,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.bacon.rc \
     libinit_bacon \
+    init.safailnet.rc \
     ueventd.bacon.rc
 
 PRODUCT_PACKAGES += \
